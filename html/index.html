@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+      }
+      .swiper-slide {
+        background-color: #f00;
+        display: flex; /* 弹性盒子布局 */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">第1页</div>
+        <div class="swiper-slide">第2页</div>
+        <div class="swiper-slide">第3页</div>
+        <div class="swiper-slide">第4页</div>
+        <div class="swiper-slide">第5页</div>
+      </div>
+    </div>
+
+    <script src="../js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container");
+    </script>
+  </body>
 </html>
