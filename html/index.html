@@ -8,35 +8,73 @@
       body {
         margin: 0;
         padding: 0;
+        background-color: #eeeeee;
+      }
+      .titleAndswiper {
+        width: 100%;
+        height: auto;
+      }
+      .title {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-left: 180px;
+        margin-top: 100px;
       }
       .swiper-container {
-        width: 500px;
+        width: 1060px;
         height: 300px;
         margin: 20px auto;
-        border: 1px solid #ccc;
+        border-radius: 50px;
       }
       .swiper-slide {
-        background-color: #f00;
-        display: flex; /* 弹性盒子布局 */
-        justify-content: center; /* 水平居中 */
-        align-items: center; /* 垂直居中 */
+        text-align: center;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
       }
     </style>
   </head>
   <body>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">第1页</div>
-        <div class="swiper-slide">第2页</div>
-        <div class="swiper-slide">第3页</div>
-        <div class="swiper-slide">第4页</div>
-        <div class="swiper-slide">第5页</div>
+    <div class="titleAndswiper">
+      <div class="title">热点直击</div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">第1页</div>
+          <div class="swiper-slide">第2页</div>
+          <div class="swiper-slide">第3页</div>
+          <div class="swiper-slide">第4页</div>
+          <div class="swiper-slide">第5页</div>
+          <div class="swiper-slide">第6页</div>
+          <div class="swiper-slide">第7页</div>
+          <div class="swiper-slide">第8页</div>
+          <div class="swiper-slide">第9页</div>
+          <div class="swiper-slide">第10页</div>
+        </div>
+        <!-- 添加按钮 -->
+        <div class="swiper-pagination"></div>
+        <!-- 添加左右控制按钮(箭头) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
     <script src="../js/swiper.min.js"></script>
     <script>
-      var swiper = new Swiper(".swiper-container");
+      var swiper = new Swiper(".swiper-container", {
+        pagination: ".swiper-pagination",
+        paginationClickable: true,
+        spaceBetween: 30,
+        slidesPerView: 4,
+        // 设置控制按钮
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        // 循环模式
+        loop: true,
+      });
     </script>
   </body>
 </html>
