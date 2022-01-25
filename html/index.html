@@ -1,80 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/swiper.min.css" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #eeeeee;
-      }
-      .titleAndswiper {
-        width: 100%;
-        height: auto;
-      }
-      .title {
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        position: relative;
-        margin-left: 180px;
-        margin-top: 100px;
-      }
-      .swiper-container {
-        width: 1060px;
-        height: 300px;
-        margin: 20px auto;
-        border-radius: 50px;
-      }
-      .swiper-slide {
-        text-align: center;
-        background-color: #ccc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="titleAndswiper">
-      <div class="title">热点直击</div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">第1页</div>
-          <div class="swiper-slide">第2页</div>
-          <div class="swiper-slide">第3页</div>
-          <div class="swiper-slide">第4页</div>
-          <div class="swiper-slide">第5页</div>
-          <div class="swiper-slide">第6页</div>
-          <div class="swiper-slide">第7页</div>
-          <div class="swiper-slide">第8页</div>
-          <div class="swiper-slide">第9页</div>
-          <div class="swiper-slide">第10页</div>
-        </div>
-        <!-- 添加按钮 -->
-        <div class="swiper-pagination"></div>
-        <!-- 添加左右控制按钮(箭头) -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #ccc;
+			}
+			.titleAndswiper {
+				width: 1060px;
+				margin: 0 auto;
+				height: auto;
+			}
+			.toppart {
+				width: auto;
+				height: auto;
+				display: flex;
+				flex-direction: row;
+				position: relative;
+				align-items: center;
+				margin-top: 20px;
+			}
+			.toppart .title {
+				color: black;
+				font-size: 30px;
+				font-weight: bold;
+				position: relative;
+			}
+			.toppart .littletitle {
+				font-size: 14px;
+				color: red;
+				width: auto;
+				height: auto;
+				margin-left: 20px;
+			}
+			.swiper-container {
+				width: 1060px;
+				height: 210px;
+				margin: 20px auto;
+				border-radius: 20px;
+			}
+			.swiper-slide {
+				text-align: center;
+				background-color: #ffffff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 20px;
+			}
+			.swiper-slide .hgcont {
+				height: 100%;
+				width: 100%;
+			}
+      .swiper-slide .hgcont2 {
+				height: 100%;
+				width: 100%;
+			}
+			.swiper-slide .hgcont .hgimg {
+				height: auto;
+				width: 100%;
+				border-radius: 20px 20px 0 0;
+			}
+      .swiper-slide .hgcont2 .hgimg2 {
+				height: auto;
+				width: 100%;
+				border-radius: 20px 20px 0 0;
+			}
+			.swiper-slide .hgcont .hginfo {
+				font-size: 18px;
+				color: black;
+				line-height: 20px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 200px;
+				display: inline-block;
+				text-align: center;
+			}
+      .swiper-slide .hgcont2 .hginfo2 {
+				font-size: 18px;
+				color: black;
+				line-height: 20px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 200px;
+				display: inline-block;
+				text-align: center;
+			}
+			video::-webkit-media-controls {
+				display: none !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="titleAndswiper">
+			<div class="toppart">
+				<div class="title">滴滴滴滴</div>
+				<div class="littletitle">大大飒飒撒旦撒顶起</div>
+			</div>
+			<div class="swiper-container swiper-container-hotgame">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="hgcont">
+							<video class="hgimg" controls="controls" muted>
+								<source src="../images/下载.mp4" type="video/mp4" />
+							</video>
+							<!-- <img src="../images/2.jpg" alt="" class="hgimg" /> -->
+							<p class="hginfo">撒大苏打倒萨大大大大dadadad</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="hgcont2">
+							<video class="hgimg2" controls="controls" muted>
+								<source src="../images/下载.mp4" type="video/mp4" />
+							</video>
+							<!-- <img src="../images/2.jpg" alt="" class="hgimg" /> -->
+							<p class="hginfo2">撒大苏打倒萨大大大大dadadad</p>
+						</div>
+					</div>
+					<div class="swiper-slide">3</div>
+					<div class="swiper-slide">4</div>
+					<div class="swiper-slide">5</div>
+					<div class="swiper-slide">6</div>
+				</div>
+				<!-- 添加下面小圆圈按钮 -->
+				<div class="swiper-pagination"></div>
+				<!-- 添加左右控制按钮(箭头) -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
 
-    <script src="../js/swiper.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        pagination: ".swiper-pagination",
-        paginationClickable: true,
-        spaceBetween: 30,
-        slidesPerView: 4,
-        // 设置控制按钮
-        nextButton: ".swiper-button-next",
-        prevButton: ".swiper-button-prev",
-        // 循环模式
-        loop: true,
-      });
-    </script>
-  </body>
+		<script src="../js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				paginationHide: false,
+				spaceBetween: 14,
+				slidesPerView: 4,
+				// 设置控制按钮
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				// 循环模式
+				loop: true
+			});
+			let video = document.querySelector('.swiper-slide .hgcont .hgimg');
+			video.addEventListener('mouseenter', function () {
+				if (video.paused) {
+					video.play();
+				}
+			});
+			video.addEventListener('mouseleave', function () {
+				video.load();
+			});
+      let video2 = document.querySelector('.swiper-slide .hgcont2 .hgimg2');
+      video2.addEventListener('mouseenter', function () {
+				if (video.paused) {
+					video2.play();
+				}
+			});
+			video2.addEventListener('mouseleave', function () {
+				video2.load();
+			});
+		</script>
+	</body>
 </html>
