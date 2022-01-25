@@ -55,7 +55,7 @@
 				height: 100%;
 				width: 100%;
 			}
-      .swiper-slide .hgcont2 {
+			.swiper-slide .hgcont2 {
 				height: 100%;
 				width: 100%;
 			}
@@ -64,7 +64,7 @@
 				width: 100%;
 				border-radius: 20px 20px 0 0;
 			}
-      .swiper-slide .hgcont2 .hgimg2 {
+			.swiper-slide .hgcont2 .hgimg2 {
 				height: auto;
 				width: 100%;
 				border-radius: 20px 20px 0 0;
@@ -80,7 +80,7 @@
 				display: inline-block;
 				text-align: center;
 			}
-      .swiper-slide .hgcont2 .hginfo2 {
+			.swiper-slide .hgcont2 .hginfo2 {
 				font-size: 18px;
 				color: black;
 				line-height: 20px;
@@ -134,7 +134,7 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="../js/swiper.min.js"></script>
 		<script>
 			var swiper = new Swiper('.swiper-container', {
@@ -149,6 +149,23 @@
 				// 循环模式
 				loop: true
 			});
+			// function videoPlayback() {
+			// 	//获取视频标签
+			// 	let video = document.querySelector('.swiper-slide .hgcont .hgimg');
+			// 	//给视频标签添加缓存播放---video标签属性。
+			// 	video.setAttribute('autoplay', 'autoplay');
+			// 	//给视频标签添加循环播放---video标签属性。
+			// 	video.setAttribute('loop', 'loop');
+			// 	//播放视频
+			// 	video.play();
+			// }
+			// //鼠标离开
+			// function videoStopped() {
+			// 	//获取视频标签
+			// 	let video = document.querySelector('.swiper-slide .hgcont .hgimg');
+			// 	//停止播放
+			// 	video.pause();
+			// }
 			let video = document.querySelector('.swiper-slide .hgcont .hgimg');
 			video.addEventListener('mouseenter', function () {
 				if (video.paused) {
@@ -158,8 +175,8 @@
 			video.addEventListener('mouseleave', function () {
 				video.load();
 			});
-      let video2 = document.querySelector('.swiper-slide .hgcont2 .hgimg2');
-      video2.addEventListener('mouseenter', function () {
+			let video2 = document.querySelector('.swiper-slide .hgcont2 .hgimg2');
+			video2.addEventListener('mouseenter', function () {
 				if (video.paused) {
 					video2.play();
 				}
