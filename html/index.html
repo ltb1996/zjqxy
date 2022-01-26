@@ -4,127 +4,92 @@
 		<meta charset="UTF-8" />
 		<title>Document</title>
 		<link rel="stylesheet" href="../css/swiper.min.css" />
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-color: #ccc;
-			}
-			.titleAndswiper {
-				width: 1060px;
-				margin: 0 auto;
-				height: auto;
-			}
-			.toppart {
-				width: auto;
-				height: auto;
-				display: flex;
-				flex-direction: row;
-				position: relative;
-				align-items: center;
-				margin-top: 20px;
-			}
-			.toppart .title {
-				color: black;
-				font-size: 30px;
-				font-weight: bold;
-				position: relative;
-			}
-			.toppart .littletitle {
-				font-size: 14px;
-				color: red;
-				width: auto;
-				height: auto;
-				margin-left: 20px;
-			}
-			.swiper-container {
-				width: 1060px;
-				height: 210px;
-				margin: 20px auto;
-				border-radius: 20px;
-			}
-			.swiper-slide {
-				text-align: center;
-				background-color: #ffffff;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border-radius: 20px;
-				overflow: hidden;
-				height: 210px;
-			}
-			.swiper-slide .hgcont {
-				position: absolute;
-				top: 0;
-				left: 0;
-				max-height: 143px;
-				max-width: 100%;
-				overflow: hidden;
-				flex-shrink: 0;
-				border-radius: 20px 20px 0 0;
-				cursor: pointer;
-			}
-			.swiper-slide .hgcont .hgimg {
-				height: 100%;
-				width: 100%;
-				transition: all 0.35s linear;
-				overflow: hidden;
-			}
-			.swiper-slide .hgcont .hgimg:hover {
-				transform: scale(1.05);
-			}
-			.swiper-slide .hginfo {
-				font-size: 18px;
-				color: black;
-				line-height: 20px;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				width: 200px;
-				display: inline-block;
-				text-align: center;
-				position: absolute;
-				top: 70%;
-			}
-			video::-webkit-media-controls {
-				display: none !important;
-			}
-		</style>
+		<link rel="stylesheet" href="../css/index.css" />
 	</head>
 	<body>
 		<div class="titleAndswiper">
 			<div class="toppart">
 				<div class="title">滴滴滴滴</div>
 				<div class="littletitle">大大飒飒撒旦撒顶起</div>
+				<div class="pageCont">
+					<div class="swiper-button-next next"></div>
+					<div class="swiper-button-prev prev"></div>
+				</div>
 			</div>
 			<div class="swiper-container swiper-container-hotgame">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="hgcont">
 							<video class="hgimg" controls="controls" muted>
-								<source src="../images/下载.mp4" type="video/mp4" />
+								<source
+									src="https://vodpub1.v.news.cn/original/20220124/33680c8ba96f4a54a6ef333a7dab0f64.mp4"
+									type="video/mp4"
+								/>
 							</video>
 						</div>
-						<p class="hginfo">撒大大大实打实的</p>
+						<p class="hginfo">争当网络护跑手 陪伴火炬迎冬奥</p>
 					</div>
 					<div class="swiper-slide">
 						<div class="hgcont">
 							<video class="hgimg" controls="controls" muted>
-								<source src="../images/下载.mp4" type="video/mp4" />
+								<source
+									src="https://vodpub1.v.news.cn/yhfb-original/20220125/fa066aef-f4b5-4cf4-b80f-95506b3c696e.mp4"
+									type="video/mp4"
+								/>
 							</video>
 						</div>
-						<p class="hginfo">撒大大大实打实的</p>
+						<p class="hginfo">来啊！来冰上开赛车啊！——探访国家雪车雪橇中心</p>
 					</div>
-					<div class="swiper-slide">3</div>
-					<div class="swiper-slide">4</div>
-					<div class="swiper-slide">5</div>
-					<div class="swiper-slide">6</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<div class="hgcont">
+								<video class="hgimg" controls="controls" muted>
+									<source
+										src="https://vodpub1.v.news.cn/yhfb-original/20220125/274f73d8-4e9f-44d6-9b89-e74a3bc18cb6.mp4"
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+							<p class="hginfo">哪一个瞬间，让你感觉到要过年了</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<div class="hgcont">
+								<video class="hgimg" controls="controls" muted>
+									<source
+										src="https://vodpub1.v.news.cn/original/20220125/ced2aac6d4e5459b99ac91e9f8fc5f1c.mp4"
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+							<p class="hginfo">纸上的冬奥</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<div class="hgcont">
+								<video class="hgimg" controls="controls" muted>
+									<source src="https://vodpub1.v.news.cn/yhfb-original/20220124/ac57d674-f4c3-4353-b676-f019e5700512.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<p class="hginfo">一起探访中国“滑雪冠军的摇篮”</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<div class="hgcont">
+								<video class="hgimg" controls="controls" muted>
+									<source src="../images/下载.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<p class="hginfo">抖音十大热门歌曲</p>
+						</div>
+					</div>
 				</div>
 				<!-- 添加下面小圆圈按钮 -->
 				<div class="swiper-pagination"></div>
 				<!-- 添加左右控制按钮(箭头) -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
 		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -134,7 +99,7 @@
 				pagination: '.swiper-pagination',
 				paginationClickable: true,
 				paginationHide: false,
-				spaceBetween: 14,
+				spaceBetween: 10,
 				slidesPerView: 4,
 				// 设置控制按钮
 				nextButton: '.swiper-button-next',
@@ -142,29 +107,6 @@
 				// 循环模式
 				loop: true
 			});
-			// function videoPlayback() {
-			// 	//获取视频标签
-			// 	let video = document.querySelector('.swiper-slide .hgcont .hgimg');
-			// 	//给视频标签添加缓存播放---video标签属性。
-			// 	video.setAttribute('autoplay', 'autoplay');
-			// 	//给视频标签添加循环播放---video标签属性。
-			// 	video.setAttribute('loop', 'loop');
-			// 	//播放视频
-			// 	video.play();
-			// }
-			// //鼠标离开
-			// function videoStopped() {
-			// 	//获取视频标签
-			// 	let video = document.querySelector('.swiper-slide .hgcont .hgimg');
-			// 	//停止播放
-			// 	video.pause();
-			// }
-			// $('.swiper-slide .hgcont video').on('onmouseover', video, function () {
-			// 	$(this).get(0).play();
-			// });
-			// $('.swiper-slide .hgcont video').on('onmouseleave', video, function () {
-			// 	$(this).get(0).pause();
-			// });
 			let video = document.querySelectorAll('.swiper-slide .hgcont .hgimg');
 			for (let i = 0; i < video.length; i++) {
 				video[i].addEventListener('click', function () {
