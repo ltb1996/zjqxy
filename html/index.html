@@ -9,8 +9,8 @@
 	<body>
 		<div class="titleAndswiper">
 			<div class="toppart">
-				<div class="title">滴滴滴滴</div>
-				<div class="littletitle">大大飒飒撒旦撒顶起</div>
+				<div class="title">体育新闻</div>
+				<div class="littletitle">迎接2022北京冬奥会</div>
 				<div class="pageCont">
 					<div class="swiper-button-next next"></div>
 					<div class="swiper-button-prev prev"></div>
@@ -45,12 +45,12 @@
 							<div class="hgcont">
 								<video class="hgimg" controls="controls" muted>
 									<source
-										src="https://vodpub1.v.news.cn/yhfb-original/20220125/274f73d8-4e9f-44d6-9b89-e74a3bc18cb6.mp4"
+										src="https://vodpub1.v.news.cn/original/20220125/1deb4f003b0a4d8396797904d87e8f98.mp4"
 										type="video/mp4"
 									/>
 								</video>
 							</div>
-							<p class="hginfo">哪一个瞬间，让你感觉到要过年了</p>
+							<p class="hginfo">那个瞬间冬奥会来了</p>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -70,7 +70,10 @@
 						<div class="swiper-slide">
 							<div class="hgcont">
 								<video class="hgimg" controls="controls" muted>
-									<source src="https://vodpub1.v.news.cn/yhfb-original/20220124/ac57d674-f4c3-4353-b676-f019e5700512.mp4" type="video/mp4" />
+									<source
+										src="https://vodpub1.v.news.cn/yhfb-original/20220124/ac57d674-f4c3-4353-b676-f019e5700512.mp4"
+										type="video/mp4"
+									/>
 								</video>
 							</div>
 							<p class="hginfo">一起探访中国“滑雪冠军的摇篮”</p>
@@ -88,7 +91,7 @@
 					</div>
 				</div>
 				<!-- 添加下面小圆圈按钮 -->
-				<div class="swiper-pagination"></div>
+				<!-- <div class="swiper-pagination"></div> -->
 				<!-- 添加左右控制按钮(箭头) -->
 			</div>
 		</div>
@@ -96,10 +99,11 @@
 		<script src="../js/swiper.min.js"></script>
 		<script>
 			var swiper = new Swiper('.swiper-container', {
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
-				paginationHide: false,
+				// pagination: '.swiper-pagination',
+				// paginationClickable: true,
+				// paginationHide: false,
 				spaceBetween: 10,
+				// slidesPerView: scrollWidth == 1560 ? 4 : 2,
 				slidesPerView: 4,
 				// 设置控制按钮
 				nextButton: '.swiper-button-next',

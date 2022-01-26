@@ -4,7 +4,7 @@ body {
 	background-color: #ccc;
 }
 .titleAndswiper {
-	width: 1060px;
+	width: 1280px;
 	margin: 0 auto;
 	height: auto;
 	position: relative;
@@ -32,10 +32,14 @@ body {
 	margin-left: 20px;
 }
 .swiper-container {
-	width: 1060px;
+	width: 1280px;
 	height: 210px;
 	margin: 20px auto;
 	border-radius: 20px;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide {
 	text-align: center;
@@ -51,10 +55,9 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	max-height: 143px;
+	max-height: 160px;
 	max-width: 100%;
 	overflow: hidden;
-	flex-shrink: 0;
 	border-radius: 20px 20px 0 0;
 	cursor: pointer;
 }
@@ -78,7 +81,12 @@ body {
 	display: inline-block;
 	text-align: center;
 	position: absolute;
-	top: 70%;
+	top: 75%;
+}
+.swiper-slide .hginfo:hover {
+	color: #ff9724 !important;
+	transition: all 0.2s linear;
+  cursor: pointer;
 }
 video::-webkit-media-controls {
 	display: none !important;
