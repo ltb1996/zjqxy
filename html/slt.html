@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<!-- Demo styles -->
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.swiper-container {
+				width: 700px;
+				margin: auto;
+				background: #000;
+			}
+			.swiper-wrapper {
+				height: 320px;
+				position: relative;
+			}
+			.swiper-slide {
+				height: 100px;
+				width: 100px;
+			}
+			.gallery-top {
+				width: 700px;
+				height: 320px;
+			}
+			.gallery-thumbs {
+				height: 100px;
+				width: 700px;
+				box-sizing: border-box;
+			}
+			.gallery-thumbs .thumbs1 {
+				height: 100%;
+				width: 100%;
+			}
+			.gallery-thumbs .thumbs1 .thumbs2 {
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Swiper -->
+		<div class="swiper-container gallery-top">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../images/assets/b_01.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_02.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_03.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_04.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_05.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_06.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_07.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_08.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_09.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/b_10.jpg" />
+				</div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<div class="swiper-container gallery-thumbs">
+			<div class="swiper-wrapper thumbs1">
+				<div class="swiper-slide thumbs2">
+					<img src="../images/assets/s_01.jpg" />
+				</div>
+				<div class="swiper-slide thumbs2">
+					<img src="../images/assets/s_02.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_03.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_04.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_05.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_06.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_07.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_08.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_09.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/assets/s_10.jpg" />
+				</div>
+			</div>
+		</div>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		<script>
+			var galleryTop = new Swiper('.gallery-top', {
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 10,
+				loop: true,
+				grabCursor: true,
+				loopedSlides: 5 //looped slides should be the same
+			});
+			var galleryThumbs = new Swiper('.gallery-thumbs', {
+				spaceBetween: 0,
+				slidesPerView: 'auto',
+				loop: true,
+				loopedSlides: 5, //looped slides should be the same
+        grabCursor: true,
+				slideToClickedSlide: true
+			});
+			galleryTop.params.control = galleryThumbs;
+			galleryThumbs.params.control = galleryTop;
+		</script>
+	</body>
+</html>

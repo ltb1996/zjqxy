@@ -38,8 +38,8 @@ body {
 	border-radius: 20px;
 }
 .swiper-wrapper {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 .swiper-slide {
 	text-align: center;
@@ -86,7 +86,7 @@ body {
 .swiper-slide .hginfo:hover {
 	color: #ff9724 !important;
 	transition: all 0.2s linear;
-  cursor: pointer;
+	cursor: pointer;
 }
 video::-webkit-media-controls {
 	display: none !important;

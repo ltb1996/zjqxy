@@ -16,7 +16,7 @@
 					<div class="swiper-button-prev prev"></div>
 				</div>
 			</div>
-			<div class="swiper-container swiper-container-hotgame">
+			<div class="swiper-container gallery-thumbs">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="hgcont">
@@ -102,14 +102,30 @@
 				// pagination: '.swiper-pagination',
 				// paginationClickable: true,
 				// paginationHide: false,
+				// 每张间距
 				spaceBetween: 10,
 				// slidesPerView: scrollWidth == 1560 ? 4 : 2,
+				// 每行几个
 				slidesPerView: 4,
+				// 键盘控制
+				keyboardControl: true,
+				// 鼠标控制
+				mousewheelControl: true,
 				// 设置控制按钮
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
 				// 循环模式
-				loop: true
+				loop: true,
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				coverflow: {
+					rotate: 20,
+					stretch: 0,
+					depth: 60,
+					modifier: 1,
+					slideShadows: true
+				}
 			});
 			let video = document.querySelectorAll('.swiper-slide .hgcont .hgimg');
 			for (let i = 0; i < video.length; i++) {
