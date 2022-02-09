@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/index1.css" />
+	<link rel="stylesheet" href="../css/footer.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- 顶部banner -->
+      <div class="header">
+        <span class="header-logo">Treasure</span>
+        <a href="#" class="header-menu">下载app</a>
+        <a href="#" class="header-menu">反馈</a>
+        <a href="#" class="header-menu">关于</a>
+        <a href="#" class="header-menu">无障碍</a>
+        <a href="#" class="header-menu">帮助</a>
+
+        <div class="right-header">
+          <a href="#" class="login-button">登录</a>
+          <a href="#"><img src="../images/menu.png" alt="" class="menu" /></a>
+        </div>
+      </div>
+
+      <!-- 搜索部分 -->
+      <div class="search">
+        <div class="search-title">
+          <span class="search-logo">Treasure </span>
+          <span class="search-news">News</span>
+        </div>
+        <form action="search.js" onsubmit="return search()">
+          <input
+            type="text"
+            class="search_input"
+            autocomplete="off"
+            autofocus
+            id="search_input"
+          />
+          <a href="javascript:;">
+            <img
+              src="../images/search.png"
+              alt=""
+              class="search-png"
+              onclick="return search()"
+            />
+          </a>
+        </form>
+      </div>
+
+      <!-- 热点部分 -->
+      <div class="hot-news">
+        <img src="../images/hotnews.png" alt="" class="hot-news-img" />
+        <a href="#">曝内马尔已恢复训练</a>
+        <a href="#">金钱豹扮演者送祝福</a>
+        <a href="#">国米宣布伐森斯加盟</a>
+      </div>
+    </div>
+    <div class="titleAndswiper">
+      <div class="toppart">
+        <div class="title">体育新闻</div>
+        <div class="littletitle">迎接2022北京冬奥会</div>
+        <div class="pageCont">
+          <div class="swiper-button-next next"></div>
+          <div class="swiper-button-prev prev"></div>
+        </div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hgcont">
+              <video class="hgimg" controls="controls" muted>
+                <source
+                  src="https://vodpub1.v.news.cn/yhfb-original/20220126/4e77d4ef-e0fb-4c63-b63f-f3c5a47c87c7.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <a
+              href="http://www.news.cn/2022-01/26/c_1128303164.htm"
+              target="_blank"
+              class="hginfo"
+              >和机器人一起滑雪，你体验过吗？</a
+            >
+          </div>
+          <div class="swiper-slide">
+            <div class="hgcont">
+              <video class="hgimg" controls="controls" muted>
+                <source
+                  src="https://vodpub1.v.news.cn/yhfb-original/20220125/fa066aef-f4b5-4cf4-b80f-95506b3c696e.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <a
+              href="http://www.2022bmc.cn/2022-01/25/c_1128299717.htm"
+              target="_blank"
+              class="hginfo"
+              >来啊！来冰上开赛车啊！——探访国家雪车雪橇中心</a
+            >
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="hgcont">
+                <video class="hgimg" controls="controls" muted>
+                  <source
+                    src="https://vodpub1.v.news.cn/original/20220125/1deb4f003b0a4d8396797904d87e8f98.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <a
+                href="http://yn.news.cn/original/2022-02/02/c_1310449662.htm"
+                target="_blank"
+                class="hginfo"
+                >冬奥会来了 听听彩云之南的他们怎么说</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="hgcont">
+                <video class="hgimg" controls="controls" muted>
+                  <source
+                    src="https://vodpub1.v.news.cn/original/20220125/ced2aac6d4e5459b99ac91e9f8fc5f1c.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <a
+                href="http://www.2022bmc.cn/2022-01/25/c_1128299756.htm"
+                target="_blank"
+                class="hginfo"
+                >纸上的冬奥</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="hgcont">
+                <video class="hgimg" controls="controls" muted>
+                  <source
+                    src="https://vodpub1.v.news.cn/yhfb-original/20220125/8a3dc184-613c-42de-acc5-1537db347111.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <a
+                href="http://www.news.cn/video/2022-01/25/c_1128299021.htm"
+                target="_blank"
+                class="hginfo"
+                >冬奥会技术官员是这样炼成的</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="hgcont">
+                <video class="hgimg" controls="controls" muted>
+                  <source
+                    src="https://vodpub1.v.news.cn/yhfb-original/20220112/81c278ea-295c-4448-a4ac-73c166e79f46.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <a
+                href="http://bj.news.cn/2022-01/13/c_1128258503.htm"
+                target="_blank"
+                class="hginfo"
+                >“快护暖美”！科技助力打造冬奥健儿战衣</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 添加下面小圆圈按钮 -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+    <div class="items">
+      <h1>友情链接</h1>
+      <a
+        class="item"
+        href="https://www.gmw.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >光明网</a
+      >
+      <a
+        class="item"
+        href="https://www.cnr.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >央广网</a
+      >
+      <a
+        class="item"
+        href="http://www.cri.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >国际在线</a
+      >
+      <a
+        class="item"
+        href="http://www.tibet.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国西藏网</a
+      >
+      <a
+        class="item"
+        href="https://www.cankaoxiaoxi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >参考消息</a
+      >
+      <a
+        class="item"
+        href="https://www.huanqiu.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >环球网</a
+      >
+      <a
+        class="item"
+        href="http://www.cyol.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中青在线</a
+      >
+      <a
+        class="item"
+        href="https://www.youth.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中青网</a
+      >
+      <a
+        class="item"
+        href="http://www.workercn.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中工网</a
+      >
+      <a
+        class="item"
+        href="https://www.haiwainet.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >海外网</a
+      >
+      <a
+        class="item"
+        href="http://h5.china.com.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国网</a
+      >
+      <a
+        class="item"
+        href="https://www.k618.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >未来网</a
+      >
+      <a
+        class="item"
+        href="http://qianlong.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >千龙网</a
+      >
+      <a
+        class="item"
+        href="http://www.bjnews.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >新京报</a
+      >
+      <a
+        class="item"
+        href="https://www.ynet.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北青网</a
+      >
+      <a
+        class="item"
+        href="http://www.fawan.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >法制晚报</a
+      >
+      <a
+        class="item"
+        href="http://www.morningpost.com.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北京晨报</a
+      >
+      <a
+        class="item"
+        href="http://www.bbtnews.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北京商报</a
+      >
+      <a
+        class="item"
+        href="http://www.stardaily.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北京娱乐信报</a
+      >
+      <a
+        class="item"
+        href="https://www.oeeee.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >奥一网</a
+      >
+      <a
+        class="item"
+        href="https://www.ycwb.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >金羊网</a
+      >
+      <a
+        class="item"
+        href="http://www.hsw.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >华商网</a
+      >
+      <a
+        class="item"
+        href="https://www.xinmin.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >新民网</a
+      >
+      <a
+        class="item"
+        href="https://www.rednet.cn/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >红网</a
+      >
+      <a
+        class="item"
+        href="https://www.jschina.com.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国江苏网</a
+      >
+      <a
+        class="item"
+        href="https://www.jxnews.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国江西网</a
+      >
+      <a
+        class="item"
+        href="http://www.iqilu.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >齐鲁网</a
+      >
+      <a
+        class="item"
+        href="https://www.hinews.cn/news/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >南海网</a
+      >
+      <a
+        class="item"
+        href="http://www.ahwang.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >安徽网</a
+      >
+      <a
+        class="item"
+        href="http://www.hebnews.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >河北新闻网</a
+      >
+      <a
+        class="item"
+        href="http://www.mnw.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >闽南网</a
+      >
+      <a
+        class="item"
+        href="https://www.hxnews.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >海峡网</a
+      >
+      <a
+        class="item"
+        href="https://www.voc.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >华声在线</a
+      >
+      <a
+        class="item"
+        href="https://tv.cztv.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国蓝TV</a
+      >
+      <a
+        class="item"
+        href="http://www.lnd.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北国网</a
+      >
+      <a
+        class="item"
+        href="http://www.longhoo.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >龙虎网</a
+      >
+      <a
+        class="item"
+        href="https://www.timedg.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >东莞时间网</a
+      >
+      <a
+        class="item"
+        href="https://www.dongchedi.com/?zt=tt_pc_friendly_link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >懂车帝</a
+      >
+      <a
+        class="item"
+        href="https://www.autohome.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >汽车之家</a
+      >
+      <a
+        class="item"
+        href="http://www.onlylady.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Onlylady女人志</a
+      >
+      <a
+        class="item"
+        href="https://123.chinaso.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国搜索</a
+      >
+      <a
+        class="item"
+        href="https://www.nbd.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >每日经济新闻</a
+      >
+      <a
+        class="item"
+        href="https://www.cheshi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >网上车市</a
+      >
+      <a
+        class="item"
+        href="https://www.news18a.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >网通社汽车</a
+      >
+      <a
+        class="item"
+        href="http://www.enorth.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >北方网</a
+      >
+      <a
+        class="item"
+        href="http://www.hnt.gov.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >湖南省旅发委官网</a
+      >
+      <a
+        class="item"
+        href="https://www.leju.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >乐居网</a
+      >
+      <a
+        class="item"
+        href="http://www.rmlt.com.cn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >人民论坛网</a
+      >
+      <a
+        class="item"
+        href="http://www.cfbond.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >中国财富网</a
+      >
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // pagination: ".swiper-pagination",
+        // paginationClickable: true,
+        // paginationHide: false,
+        // paginationType: "progress",
+        // 每张间距
+        spaceBetween: 30,
+        // 每行几个
+        slidesPerView: 4,
+        // 键盘控制
+        keyboardControl: true,
+        // 鼠标控制
+        mousewheelControl: true,
+        // 设置控制按钮
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        // 循环模式
+        loop: true,
+        grabCursor: true,
+        // effect: 'coverflow',
+        // centeredSlides: true,
+        // coverflow: {
+        // 	rotate: 20,
+        // 	stretch: 0,
+        // 	depth: 60,
+        // 	modifier: 1,
+        // 	slideShadows: true
+        // }
+      });
+      let video = document.querySelectorAll(".swiper-slide .hgcont .hgimg");
+      for (let i = 0; i < video.length; i++) {
+        video[i].addEventListener("click", function () {
+          if (video[i].paused) {
+            this.play();
+          } else {
+            this.pause();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
