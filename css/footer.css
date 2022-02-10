@@ -4,6 +4,8 @@ title {
 .items h1 {
 	color: black;
 	font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 .items .itemsBottom {
 	display: flex;
