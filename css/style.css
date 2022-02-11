@@ -1,201 +1,201 @@
-
 /* 
     -*- coding = utf-8 -*-
     @Author: Li Ge
     @Time: 2022/1/25  
 */
 
-:root{
-    --dark-🌑-outline-on-surface-ffffff-12-: #FFFFFF1F;
-    --dark-🌑-on-primary-disabled-000000-38-: #00000061;
-    --light-🌕-outline-on-surface-000000-12-: #0000001F;
-    --light-🌕-on-primary-disabled-ffffff-38-: #FFFFFF61;
-    --light-🌕-on-primary-medium-emphasis-ffffff-74-: #FFFFFFBD;
-    --light-🌕-on-surface-high-emphasis-000000-87-: #000000DE;
-    --dark-🌑-error-cf6679: #CF6679;
-    --light-🌕-error-b00020: #B00020;
-    --primary-900: #23036A;
-    --primary-400: #7F39FB;
-    --primary-500-🌕: #6200EE;
-    --primary-300: #985EFF;
-    --primary-200-🌑: #BB86FC;
-    --primary-100: #DBB2FF;
-    --primary-50: #F2E7FE;
+:root {
+  --dark-🌑-outline-on-surface-ffffff-12-: #ffffff1f;
+  --dark-🌑-on-primary-disabled-000000-38-: #00000061;
+  --light-🌕-outline-on-surface-000000-12-: #0000001f;
+  --light-🌕-on-primary-disabled-ffffff-38-: #ffffff61;
+  --light-🌕-on-primary-medium-emphasis-ffffff-74-: #ffffffbd;
+  --light-🌕-on-surface-high-emphasis-000000-87-: #000000de;
+  --dark-🌑-error-cf6679: #cf6679;
+  --light-🌕-error-b00020: #b00020;
+  --primary-900: #23036a;
+  --primary-400: #7f39fb;
+  --primary-500-🌕: #6200ee;
+  --primary-300: #985eff;
+  --primary-200-🌑: #bb86fc;
+  --primary-100: #dbb2ff;
+  --primary-50: #f2e7fe;
 }
 
 /* 整体样式 */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    height: 838px;
-    width: 1920px;
+.container {
+  height: 838px;
+  width: 1920px;
 
-    background-color: #EEEEEE;
-    opacity: 1;
+  background-color: #eeeeee;
+  opacity: 1;
 }
 
 /* 顶部banner */
-.header{
-    width: 100%;
-    padding-left: 30px;
-    padding-top: 30px;
-    float: left;
+.header {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+  float: left;
 }
 
-.header-logo{
-    margin-right: 30px;
+.header-logo {
+  margin-right: 30px;
 
-    text-align: left;
-    font: normal normal 800 40px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #C88F8E;
+  text-align: left;
+  font: normal normal 800 40px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #c88f8e;
 }
 
-.header-menu{
-    margin-left: 60px;
-    color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
-    text-align: left;
+.header-menu {
+  margin-left: 60px;
+  color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
+  text-align: left;
 
-    font: normal normal 800 28px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #000000DE;
+  font: normal normal 800 28px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #000000de;
 }
 
-.header-menu:hover{
-    margin-left: 60px;
-    color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
-    text-align: left;
+.header-menu:hover {
+  margin-left: 60px;
+  color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
+  text-align: left;
 
-    font: normal normal 800 28px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #C88F8E;
+  font: normal normal 800 28px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #c88f8e;
 }
 
-.right-header{
-    margin-left: 1670px;
+.right-header {
+  margin-left: 1670px;
 }
 
-.login-button{
-    position: absolute;
-    padding: 8px 18px;
-    margin-top: -35px;
+.login-button {
+  position: absolute;
+  padding: 8px 18px;
+  margin-top: -35px;
 
-    background-color: #BB8181;
-    border-radius: 21px;
-    font: normal normal 800 26px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #FFFFFFDE;
-    opacity: 1;
+  background-color: #bb8181;
+  border-radius: 21px;
+  font: normal normal 800 26px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #ffffffde;
+  opacity: 1;
 }
 
-.login-button:hover{
-    position: absolute;
-    padding: 8px 18px;
-    margin-top: -35px;
+.login-button:hover {
+  position: absolute;
+  padding: 8px 18px;
+  margin-top: -35px;
 
-    background-color: #996969;
-    border-radius: 21px;
-    font: normal normal 800 26px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #FFFFFFDE;
-    opacity: 1;
+  background-color: #996969;
+  border-radius: 21px;
+  font: normal normal 800 26px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #ffffffde;
+  opacity: 1;
 }
 
-.menu{
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 120px;
-    height: 49px;
+.menu {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 120px;
+  height: 49px;
 }
 
 /* 搜索部分 */
-.search{
-    text-align: center;
+.search {
+  text-align: center;
 }
 
-.search-title{
-    margin-bottom: 40px;
+.search-title {
+  margin-bottom: 40px;
 
-    border-top: solid #EEEEEE 300px;
+  border-top: solid #eeeeee 300px;
 }
 
-.search-logo{
-    text-align: center;
+.search-logo {
+  text-align: center;
 
-    font: normal normal 800 35px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #C88F8E;
+  font: normal normal 800 35px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #c88f8e;
 }
 
-.search-news{
-    color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
-    text-align: center;
-    font: normal normal 800 35px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #000000DE;
+.search-news {
+  color: var(--light-🌕-on-surface-high-emphasis-000000-87-);
+  text-align: center;
+  font: normal normal 800 35px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #000000de;
 }
 
-input{
-    /* 清除已有样式 */
-    outline: none;
+input {
+  /* 清除已有样式 */
+  outline: none;
 
-    /* 设置我们要的样式 */
-    width: 770px;
-    height: 50px;
-    text-indent: 30px;
-    border: none;
-    border-radius: 46px;
-    font: normal normal 800 22px/23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #000000DE;
+  /* 设置我们要的样式 */
+  width: 770px;
+  height: 50px;
+  text-indent: 30px;
+  border: none;
+  border-radius: 46px;
+  font: normal normal 800 22px/23px Apple SD Gothic Neo;
+  letter-spacing: 0px;
+  color: #000000de;
 }
 
-.search-png{
-    position: absolute;
-    height: 37px;
-    margin-top: 7px;
-    margin-left: -67px;
+.search-png {
+  position: absolute;
+  height: 37px;
+  margin-top: 7px;
+  margin-left: -67px;
 }
 
-input:focus{
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 /* 热点部分 */
-.hot-news{
-    text-align: center;
-    margin-top: 20px;
-    margin-left: -50px;
+.hot-news {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -50px;
 
-    font: normal normal normal 25px/16px Lato;
-    letter-spacing: 0px;
-    color: #BC0000;
-    opacity: 1;
+  font: normal normal normal 25px/16px Lato;
+  letter-spacing: 0px;
+  color: #bc0000;
+  opacity: 1;
 }
 
-.hot-news-img{
-    height: 30px;
-    margin-top: -7px;
-    margin-left: -40px;
-    position: absolute;
+.hot-news-img {
+  height: 30px;
+  margin-top: -7px;
+  margin-left: -40px;
+  position: absolute;
 }
 
-.hot-news a{
-    margin-top: -100px;
-    font-size: 20px;
-    margin-right: 20px;
-    color: black;
+.hot-news a {
+  margin-top: -100px;
+  font-size: 20px;
+  margin-right: 20px;
+  color: black;
 }
 
-.hot-news a:hover{
-    margin-top: -100px;
-    font-size: 20px;
-    margin-right: 20px;
-    color: #BC0000;
+.hot-news a:hover {
+  margin-top: -100px;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #bc0000;
 }
-
