@@ -2,38 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/sousuo.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <script src="../js/search.js"></script>
   </head>
+
   <body>
     <div class="container">
-      <video id="v1" autoplay muted loop style="width: 100%;" class="v1">
-        <source
-          src="https://lf3-static.bytednsdoc.com/obj/eden-cn/upqlnvhj/pc_background_20220211.mp4"
-        />
-      </video>
+      <!-- 顶部banner -->
       <div class="header">
         <span class="header-logo">Treasure</span>
-        <div class="header-content">
-          <span class="header-menu">首页</span>
-          <span class="header-menu">时事</span>
-          <span class="header-menu">体育</span>
-          <span class="header-menu">娱乐</span>
-          <span class="header-menu">帮助</span>
+        <a href="#" class="header-menu">首页</a>
+        <a href="#" class="header-menu">时事</a>
+        <a href="#" class="header-menu">体育</a>
+        <a href="#" class="header-menu">娱乐</a>
+        <a href="#" class="header-menu">帮助</a>
+
+        <div class="right-header">
+          <a href="#" class="login-button">登录</a>
+          <a href="#"><img src="..//images/menu.png" alt="" class="menu" /></a>
         </div>
-        <div class="dl-button">登录</div>
-        <a href="javascript:;" class="dl-menu"></a>
       </div>
+
       <!-- 搜索部分 -->
       <div class="search">
         <div class="search-title">
-          <span class="search-logo">Treasure</span>
+          <span class="search-logo">Treasure </span>
           <span class="search-news">News</span>
         </div>
         <form action="search.js" onsubmit="return search()">
@@ -54,6 +52,8 @@
           </a>
         </form>
       </div>
+
+      <!-- 热点部分 -->
       <div class="hot-news">
         <img src="..//images/hotnews.png" alt="" class="hot-news-img" />
         <a
@@ -76,7 +76,7 @@
     <div class="titleAndswiper">
       <div class="toppart">
         <div class="title">时事新闻</div>
-        <div class="littletitle">关注最新国际动态</div>
+        <div class="littletitle">关注最新大事小情</div>
         <div class="pageCont">
           <div class="swiper-button-next next1"></div>
           <div class="swiper-button-prev prev1"></div>
@@ -312,7 +312,7 @@
     <div class="titleAndswiper">
       <div class="toppart">
         <div class="title">娱乐新闻</div>
-        <div class="littletitle">最新娱乐时事播报</div>
+        <div class="littletitle">最新娱乐新闻</div>
         <div class="pageCont">
           <div class="swiper-button-next next3"></div>
           <div class="swiper-button-prev prev3"></div>

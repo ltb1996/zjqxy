@@ -28,11 +28,12 @@ a {
 }
 
 .container {
-  height: 838px;
+  height: 700px;
   width: 1920px;
-
   background-color: #eeeeee;
   opacity: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 /* 顶部banner */
@@ -44,8 +45,6 @@ a {
 }
 
 .header-logo {
-  margin-right: 30px;
-
   text-align: left;
   font: normal normal 800 40px/23px Apple SD Gothic Neo;
   letter-spacing: 0px;

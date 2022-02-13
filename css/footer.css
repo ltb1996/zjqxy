@@ -19,7 +19,8 @@ title {
   color: #6d6d6d;
   display: inline-block;
   margin-left: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 .items .itemsBottom a:hover {
   color: #ee942c !important;
