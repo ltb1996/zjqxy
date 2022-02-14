@@ -1,6 +1,6 @@
-# 字节前端 Tressure Team 队最终项目大作业
+# 字节前端 Treasure Team 队最终项目大作业
 
-这是字节前端 Tressure Team 队的大作业(字节前端基础班) 编号：174258
+这是字节前端 Treasure Team 队的大作业(字节前端基础班) 编号：174258
 
 软件架构说明：html+css+javaScript+jquery+Swiper
 
