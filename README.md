@@ -8,4 +8,4 @@
 
 项目地址：https://github.com/ltb1996/zjqxy
 
-线上网址：https://treasurenews.web.cloudendpoint.cn/
+线上网址：https://treasurenews1.web.cloudendpoint.cn/
