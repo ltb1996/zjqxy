@@ -26,7 +26,7 @@
 }
 .container .header .header-logo {
   color: #c88f8e;
-  font-size: 38px;
+  font-size: 35px;
   margin-right: 50px;
 }
 .container .header .header-content {
@@ -34,7 +34,7 @@
 }
 .container .header .header-content .header-menu {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   margin-right: 40px;
 }
 .container .header .header-content .header-menu:hover {
@@ -46,7 +46,7 @@
   height: 39px;
   border-radius: 10px;
   background: url('https://p0.ssl.qhimg.com/t014fb85d7fa1e75f29.png') center center no-repeat;
-  margin-left: 990px;
+  margin-left: 1050px;
   cursor: pointer;
   font-size: 28px;
   text-align: center;
