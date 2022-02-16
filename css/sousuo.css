@@ -28,6 +28,7 @@
   color: #c88f8e;
   font-size: 35px;
   margin-right: 50px;
+  padding-bottom: 3px;
 }
 .container .header .header-content {
   display: flex;
@@ -46,7 +47,7 @@
   height: 39px;
   border-radius: 10px;
   background: url('https://p0.ssl.qhimg.com/t014fb85d7fa1e75f29.png') center center no-repeat;
-  margin-left: 1050px;
+  margin-left: 1055px;
   cursor: pointer;
   font-size: 28px;
   text-align: center;

@@ -121,12 +121,12 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p5.ssl.qhimg.com/t017c522175f2762b94.png") center
+  background: url("https://p3.ssl.qhimg.com/t011dba9f41b7099b8e.png") center
     center no-repeat;
 }
 
 .toppart .pageCont .next1:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -134,7 +134,7 @@ video::-webkit-media-controls {
 }
 
 .toppart .pageCont .prev1:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -146,7 +146,7 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p4.ssl.qhimg.com/t0195e3aba9583924d5.png") center
+  background: url("https://p3.ssl.qhimg.com/t01766c87640af463cb.png") center
     center no-repeat;
 }
 .toppart .pageCont .next2 {
@@ -154,12 +154,12 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p5.ssl.qhimg.com/t017c522175f2762b94.png") center
+  background: url("https://p3.ssl.qhimg.com/t011dba9f41b7099b8e.png") center
     center no-repeat;
 }
 
 .toppart .pageCont .next2:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -167,7 +167,7 @@ video::-webkit-media-controls {
 }
 
 .toppart .pageCont .prev2:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -179,7 +179,7 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p4.ssl.qhimg.com/t0195e3aba9583924d5.png") center
+  background: url("https://p3.ssl.qhimg.com/t01766c87640af463cb.png") center
     center no-repeat;
 }
 .toppart .pageCont .next3 {
@@ -187,12 +187,12 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p5.ssl.qhimg.com/t017c522175f2762b94.png") center
+  background: url("https://p3.ssl.qhimg.com/t011dba9f41b7099b8e.png") center
     center no-repeat;
 }
 
 .toppart .pageCont .next3:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -200,7 +200,7 @@ video::-webkit-media-controls {
 }
 
 .toppart .pageCont .prev3:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -212,6 +212,6 @@ video::-webkit-media-controls {
   height: 20px;
   width: 20px;
   background-size: 100% 100%;
-  background: url("https://p4.ssl.qhimg.com/t0195e3aba9583924d5.png") center
+  background: url("https://p3.ssl.qhimg.com/t01766c87640af463cb.png") center
     center no-repeat;
 }
