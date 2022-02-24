@@ -4,7 +4,7 @@
 
 软件架构说明：html+css+javaScript+jquery+Swiper
 
-团队成员：刘天博 吕张成 李格 田青玉 郑成事 苏嘉儿
+团队成员：刘天博 吕张成 李格 田青玉
 
 项目地址：https://github.com/ltb1996/zjqxy
 
