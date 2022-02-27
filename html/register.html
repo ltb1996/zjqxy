@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Treasure News</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css"
+    />
+  </head>
+
+  <body>
+    <video id="v1" autoplay muted loop style="width: 100%;" class="v1">
+      <source
+        src="https://lf1-cdn-tos.bytescm.com/obj/cdn-static-resource/toutiao/xigua_cdn/xigua_video.mp4"
+      />
+    </video>
+    <div class="xtx-wrapper">
+      <div class="container">
+        <!-- 卡片 -->
+        <div class="xtx-login-header">
+          <h1 class="logo"></h1>
+          <a class="home" href="javascript:;">新用户注册</a>
+        </div>
+        <div class="xtx-card">
+          <h3>Treasure News</h3>
+          <form class="xtx-form">
+            <div data-prop="username" class="xtx-form-item">
+              <span class="iconfont icon-zhanghao"></span>
+              <input name="username" type="text" placeholder="设置用户名称" />
+              <span class="msg"></span>
+            </div>
+            <div data-prop="phone" class="xtx-form-item">
+              <span class="iconfont icon-shouji"></span>
+              <input name="phone" type="text" placeholder="输入手机号码  " />
+              <span class="msg"></span>
+            </div>
+            <div data-prop="code" class="xtx-form-item">
+              <span class="iconfont icon-zhibiaozhushibiaozhu"></span>
+              <input name="code" type="text" placeholder="短信验证码" />
+              <span class="msg"></span>
+              <a class="code" href="javascript:;">发送验证码</a>
+            </div>
+            <div data-prop="password" class="xtx-form-item">
+              <span class="iconfont icon-suo"></span>
+              <input
+                name="password"
+                type="password"
+                placeholder="设置6至20位字母、数字和符号组合"
+              />
+              <span class="msg"></span>
+            </div>
+            <div data-prop="confirm" class="xtx-form-item">
+              <span class="iconfont icon-suo"></span>
+              <input
+                name="confirm"
+                type="password"
+                placeholder="请再次输入上面密码"
+              />
+              <span class="msg"></span>
+            </div>
+            <div class="xtx-form-item pl50">
+              <i class="iconfont icon-queren"></i>
+              已阅读并同意<i>《用户服务协议》</i>
+            </div>
+            <div class="xtx-form-item">
+              <!-- <button class="submit">下一步</button> -->
+              <a class="submit" href="../html/login.html">下一步</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      // 发送验证码模块
+      let code = document.querySelector(".code");
+      code.addEventListener("click", function () {
+        code.innerHTML = `05秒后重新获取`;
+        let num = 5;
+        let timer = setInterval(function () {
+          num--;
+          code.innerHTML = `0${num}秒后重新获取`;
+          if (num < 0) {
+            clearInterval(timer);
+            code.innerHTML = `重新获取`;
+          }
+        }, 1000);
+      });
+
+      // 用户名验证
+      let username = document.querySelector("[name=username]");
+      username.addEventListener("change", verifyName);
+      function verifyName() {
+        // 定义规则
+        let reg = /^[a-zA-Z0-9-_]{6,10}$/;
+        let msg = username.nextElementSibling;
+        if (!reg.test(username.value)) {
+          msg.innerHTML = "昵称长度为6到10个字符";
+          return false;
+        }
+        msg.innerText = "";
+        return true;
+      }
+
+      // /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/
+      // 密码模块
+      let phone = document.querySelector("[name=phone]");
+      phone.addEventListener("change", verifyPhone);
+
+      function verifyPhone() {
+        // 正则表达式
+        let reg = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
+        let msg = phone.nextElementSibling;
+
+        if (!reg.test(phone.value)) {
+          msg.innerText = "请输入正确的手机号";
+          return false;
+        }
+
+        msg.innerText = "";
+
+        return true;
+      }
+
+      // code
+      let codebtn = document.querySelector("[name=code]");
+      codebtn.addEventListener("change", verifyCode);
+
+      function verifyCode() {
+        // 正则表达式
+        let reg = /^\d{6}$/;
+        let msg = codebtn.nextElementSibling;
+
+        if (!reg.test(codebtn.value)) {
+          msg.innerText = "请输入正确的验证码";
+          return false;
+        }
+
+        msg.innerText = "";
+
+        return true;
+      }
+
+      // 密码模块
+      let pass = document.querySelector("[name=password]");
+      pass.addEventListener("change", verifyPass);
+
+      function verifyPass() {
+        // 正则表达式
+        let reg = /^[a-zA-Z0-9-_]{6,20}$/;
+        let msg = pass.nextElementSibling;
+
+        if (!reg.test(pass.value)) {
+          msg.innerText = "设置6至20位字母、数字和符号组合";
+          return false;
+        }
+
+        msg.innerText = "";
+
+        return true;
+      }
+
+      // 再次密码模块
+      let confirm = document.querySelector("[name=confirm]");
+      confirm.addEventListener("change", verifyconfirm);
+
+      function verifyconfirm() {
+        // 正则表达式
+
+        let msg = confirm.nextElementSibling;
+
+        if (confirm.value !== pass.value) {
+          msg.innerText = "两次密码不一致";
+          return false;
+        }
+
+        msg.innerText = "";
+
+        return true;
+      }
+
+      let icon = document.querySelector(".icon-queren");
+      icon.addEventListener("click", function () {
+        this.classList.toggle("icon-queren2");
+      });
+
+      // 提交时验证
+      let submit = document.querySelector(".submit");
+      submit.addEventListener("click", function (ev) {
+        if (!verifyName()) ev.preventDefault();
+        if (!verifyPhone()) ev.preventDefault();
+        if (!verifyCode()) ev.preventDefault();
+        if (!verifyPass()) ev.preventDefault();
+        if (!verifyconfirm()) ev.preventDefault();
+        if (!icon.classList.contains("icon-queren2")) {
+          alert("请勾选同意协议");
+          ev.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/backtop.css" />
+    <link rel="stylesheet" href="../css/cebian.css" />
     <script src="../js/search.js"></script>
   </head>
   <body>
@@ -27,7 +29,10 @@
           <span class="header-menu">娱乐</span>
           <span class="header-menu">帮助</span>
         </div>
-        <a href="https://treasurenews2.web.cloudendpoint.cn/" class="dl-button"></a>
+        <a
+          href="https://treasurenews2.web.cloudendpoint.cn/"
+          class="dl-button"
+        ></a>
         <a href="javascript:;" class="dl-menu"></a>
       </div>
       <!-- 搜索部分 -->
@@ -456,7 +461,7 @@
           href="http://www.tibet.cn/"
           target="_blank"
           rel="noopener noreferrer"
-          >中国西藏网</a
+          >西藏网</a
         >
         <a
           class="item"
@@ -512,7 +517,7 @@
           href="https://www.k618.cn/"
           target="_blank"
           rel="noopener noreferrer"
-          >未来网</a
+          >新未来网</a
         >
         <a
           class="item"
@@ -610,7 +615,7 @@
           href="http://www.iqilu.com/"
           target="_blank"
           rel="noopener noreferrer"
-          >齐鲁网</a
+          >中华齐鲁网</a
         >
         <a
           class="item"
@@ -656,97 +661,84 @@
         >
       </div>
     </div>
+    <div class="fixedtool" style="display: none;">
+      <a href="javascript:;" class="current">搜索部分</a>
+      <a href="javascript:;">时事新闻</a>
+      <a href="javascript:;">体育新闻</a>
+      <a href="javascript:;">娱乐新闻</a>
+    </div>
+    <div class="backtop">
+      <a href="javascript:;" class="backpic"></a>
+    </div>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="../js/swiper.min.js"></script>
     <script>
       var swiper = new Swiper(".one", {
-        // pagination: ".swiper-pagination",
-        // paginationClickable: true,
-        // paginationHide: false,
-        // paginationType: "progress",
         // 每张间距
-        spaceBetween: 30,
+        spaceBetween: 18,
         // 每行几个
         slidesPerView: 4,
-        // 键盘控制
-        // keyboardControl: true,
-        // 鼠标控制
-        // mousewheelControl: true,
         // 设置控制按钮
         nextButton: ".next1",
         prevButton: ".prev1",
         // 循环模式
         loop: true,
         grabCursor: true,
-        effect: 'coverflow',
+        effect: "coverflow",
         centeredSlides: true,
         coverflow: {
-        	rotate: 20,
-        	stretch: 0,
-        	depth: 60,
-        	modifier: 1,
-        	slideShadows: true
-        }
+          rotate: 20,
+          stretch: 0,
+          depth: 80,
+          modifier: 1,
+          slideShadows: true,
+        },
       });
       // +++++++++++++++++++++++++++++++++++
       var swiper = new Swiper(".two", {
-        // pagination: ".swiper-pagination",
-        // paginationClickable: true,
-        // paginationHide: false,
-        // paginationType: "progress",
         // 每张间距
-        spaceBetween: 30,
+        spaceBetween: 18,
         // 每行几个
         slidesPerView: 4,
         // 键盘控制
-        // keyboardControl: true,
-        // 鼠标控制
-        // mousewheelControl: true,
         // 设置控制按钮
         nextButton: ".next2",
         prevButton: ".prev2",
         // 循环模式
         loop: true,
         grabCursor: true,
-        effect: 'coverflow',
+        effect: "coverflow",
         centeredSlides: true,
         coverflow: {
-        	rotate: 20,
-        	stretch: 0,
-        	depth: 60,
-        	modifier: 1,
-        	slideShadows: true
-        }
+          rotate: 20,
+          stretch: 0,
+          depth: 80,
+          modifier: 1,
+          slideShadows: true,
+        },
       });
       // ----------------------------------------
       var swiper = new Swiper(".three", {
-        // pagination: ".swiper-pagination",
-        // paginationClickable: true,
-        // paginationHide: false,
-        // paginationType: "progress",
         // 每张间距
-        spaceBetween: 30,
+        spaceBetween: 18,
         // 每行几个
         slidesPerView: 4,
         // 键盘控制
-        // keyboardControl: true,
-        // 鼠标控制
-        // mousewheelControl: true,
         // 设置控制按钮
         nextButton: ".next3",
         prevButton: ".prev3",
         // 循环模式
         loop: true,
         grabCursor: true,
-        effect: 'coverflow',
+        effect: "coverflow",
         centeredSlides: true,
         coverflow: {
-        	rotate: 20,
-        	stretch: 0,
-        	depth: 60,
-        	modifier: 1,
-        	slideShadows: true
-        }
+          rotate: 20,
+          stretch: 0,
+          depth: 80,
+          modifier: 1,
+          slideShadows: true,
+        },
       });
       //**********************************
       let video = document.querySelectorAll(".swiper-slide .hgcont .hgimg");
@@ -759,6 +751,30 @@
           }
         });
       }
+      // 0 获取元素
+      let backtop = document.querySelector(".backtop");
+      // 一. 页面滚动事件
+      window.addEventListener("scroll", function () {
+        // 2. 页面检测滚动的距离
+        let num = document.documentElement.scrollTop;
+        // 3. 进行判断显示和隐藏
+        if (num >= 500) {
+          //显示那个元素
+          backtop.style.display = "block";
+        } else {
+          // 否则隐藏元素
+          backtop.style.display = "none";
+        }
+      });
+      // 返回顶部
+      $(".backtop")
+        .children("a")
+        .click(function () {
+          $("body, html").stop().animate({
+            scrollTop: 0,
+          });
+        });
     </script>
+    <script src="../js/cebian.js"></script>
   </body>
 </html>

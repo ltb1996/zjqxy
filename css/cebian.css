@@ -1,0 +1,26 @@
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  /* margin-left: -676px; */
+  width: 100px;
+  height: 200px;
+  background-color: rgba(169, 169, 169, 0.9);
+  display: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixedtool a {
+  height: px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  /* border-bottom: 1px solid #ccc; */
+  text-decoration: none;
+}
+
+.fixedtool .current {
+  background-color: #c88f8e;
+  color: #fff;
+}

@@ -1,0 +1,18 @@
+.backtop {
+  display: none;
+  width: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 70px;
+}
+.backtop .backpic {
+  height: 50px;
+  width: 50px;
+  background: url('../images/回到顶部.png') center center no-repeat;
+  background-size: 100% 100%;
+  opacity: 1;
+  overflow: hidden;
+  display: block;
+  text-indent: -999em;
+  cursor: pointer;
+}
