@@ -16,7 +16,7 @@ title {
 }
 .items .itemsBottom a {
   font-size: 26px;
-  color: #6d6d6d;
+  color: 	rgba(169, 169, 169, 0.7);
   display: inline-block;
   margin-left: 18px;
   margin-bottom: 20px;
